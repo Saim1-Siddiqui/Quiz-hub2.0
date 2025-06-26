@@ -3,7 +3,9 @@ import './Navebar.css'
 
 function Navebar() {
   return (
-    <div className='main-container'>Navebar</div>
+    <div className='main-container'>Qui-Hub</div>
+   
+    
   )
 }
 

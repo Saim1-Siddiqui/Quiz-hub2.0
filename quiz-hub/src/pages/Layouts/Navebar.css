@@ -1,5 +1,6 @@
 .main-container{
-    height: 60px;
+    height: 70px;
     width: 100vw;
-    background-color: green;
+    background-color:#484564;
+    color:white;
 }
