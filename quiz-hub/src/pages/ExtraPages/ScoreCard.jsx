@@ -103,9 +103,7 @@ import './Scorecard.css';
 
 const Scorecard = () => {
   const location = useLocation();
-  const quizData = location.state?.quizData;
-
-  // Calculate score percentage
+  const quizData = location.state?.quizData; 
   const scorePercentage = Math.round(
     (quizData.correctAnswers / quizData.totalQuestions) * 100
   );
