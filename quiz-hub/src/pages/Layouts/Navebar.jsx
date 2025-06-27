@@ -1,33 +1,47 @@
-import React from 'react'
-import './Navebar.css'
-import { Link,NavLink } from 'react-router-dom';
-import {GiBookshelf} from 'react-icons/gi';
+import React, { useState, useRef, useEffect } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { GiBookshelf } from 'react-icons/gi';
+import { FaUserCircle } from 'react-icons/fa';
+import './Navebar.css';
 
-function Navebar() {
+const Navebar = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Close dropdown if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <div className="logo-section">
-        <GiBookshelf className="logo-icon"/>
-       <Link to="/" className="logo-text">Quiz-Hub</Link>
+        <GiBookshelf className="logo-icon" />
+        <Link to="/" className="logo-text">Quiz-Hub</Link>
       </div>
 
       <div className="nav-links">
-        <NavLink to="/Home" className="nav-link">Home</NavLink>
-        <NavLink to="/Create" className="nav-link">Create</NavLink>
-        <NavLink to="/Explore" className="nav-link">Explore</NavLink>
+        <NavLink to="/" className="nav-link">Home</NavLink>
+        <NavLink to="/create" className="nav-link">Create</NavLink>
+        <NavLink to="/explore" className="nav-link">Explore</NavLink>
       </div>
-      <div className="nav-buttons">
-        <Link to="/login">
-        <button className='login-btn'>Log in</button>
-        </Link>
-        <Link to="/signup">
-        <button className='signup-btn'>Sgin up</button>
-        </Link>
+
+      <div className="profile-dropdown" ref={dropdownRef}>
+        <FaUserCircle className="profile-icon" onClick={() => setDropdownOpen(prev => !prev)} />
+        
+        <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
+          <Link to="/login" className="dropdown-item">Log in</Link>
+          <Link to="/signup" className="dropdown-item">Sign up</Link>
+        </div>
       </div>
     </div>
-   
-    
-  )
-}
+  );
+};
 
-export default Navebar
+export default Navebar;

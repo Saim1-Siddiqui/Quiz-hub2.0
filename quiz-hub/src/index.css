@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: hidden;
+   
 }
+@media (max-width: 768px) {
+  /* Adjust layout for smaller screens */
+}
+
 .app-container{
  height: 100vh;
  width: 100vw;
