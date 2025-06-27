@@ -30,7 +30,7 @@
   border-radius: 6px;
   transition: background 0.3s ease, color 0.3s ease;
   cursor: pointer;
-  width:top 1rem;
+ margin-top: 1rem;
 }
 
 

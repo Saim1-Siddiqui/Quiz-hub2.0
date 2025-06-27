@@ -1,0 +1,23 @@
+.create-container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding-inline: 1rem;
+  background: #17171c;
+  color: #ffffff ;
+}
+.create-form{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.create-item{
+  width: 90%;
+  height: 2rem;
+  text-align: center;
+  outline: none;
+  border: none;  
+}
