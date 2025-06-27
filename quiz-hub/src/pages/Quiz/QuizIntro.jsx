@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './QuizIntro.css'
 import {NavLink} from 'react-router-dom'
+import { FaArrowRight } from 'react-icons/fa';
 
 function QuizIntro() {
   const [quizData,setQuizData]=useState({
@@ -32,20 +33,20 @@ function QuizIntro() {
         <span>{quizData.time_limit}</span>
          </div>
         </div>
-        <div className="Quiz-level">
-           <p className='Intro-border-left'></p>
+       <div className='bottom-wrap'>
+         <div className="Quiz-level">
+           <p className='Intro-border-bottom'></p>
            <div className='diffculty-level'>
             <p className='offcolor'>Diffculty</p>
             <p>{quizData.diffculty_level}</p>
            </div>
            </div>
          <div className='startbutton'>
-  <div className="start-nav">
-    <NavLink to="/AttemptQuiz" className="start-link">
-      Start Quiz
+   <NavLink to="/AttemptQuiz" className="start-link ">
+      <FaArrowRight/>
     </NavLink>
-  </div>
 </div>
+       </div>
 
         </div>
 
