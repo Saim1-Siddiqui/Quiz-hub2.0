@@ -155,7 +155,7 @@
   font-weight: bold;
 }
 
-.quiz-form-container {
+/* .quiz-form-container {
   background-color: #231C35;
   min-height: 100vh;
   padding: 2rem;
@@ -216,7 +216,7 @@
 
 .submit-btn:hover {
   background-color: #4A7AE8;
-}
+} */
 
 @media (max-width: 768px) {
   .stats-grid {
