@@ -20,7 +20,7 @@ function Sidebar() {
          <TbMath className="icon"/> Math
         </NavLink>
         <NavLink to="/Computer" className="Quiz-hub">
-         <MdComputer className='icon' />Computer
+         <MdComputer className='icon' />Categories
         </NavLink>
         <NavLink to="/Dashboard" className="Quiz-hub">
          <MdDashboard className='icon' />Dashboard
