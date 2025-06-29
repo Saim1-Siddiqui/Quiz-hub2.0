@@ -174,6 +174,21 @@ const QuizForm = () => {
       question: 'Which CSS framework is most popular?',
       options: ['Tailwind', 'Bulma', 'Bootstrap', 'Foundation'],
       correctAnswer: 'Bootstrap'
+    },
+    {
+      question: 'Which is Javascript Framework?',
+      options: ['Tailwind', 'React', 'Angular', 'Foundation'],
+      correctAnswer: 'React'
+    },
+    {
+      question: 'What is the capital of Pakistan?',
+      options: ['Islamabad', 'Lahore', 'Bahawalpur', 'Karachi'],
+      correctAnswer: 'Islamabad'
+    },
+    {
+      question: 'What is React.js?',
+      options: ['Function', 'App', 'Framework', 'Program'],
+      correctAnswer: 'Framework'
     }
   ];
 
@@ -248,7 +263,7 @@ const QuizForm = () => {
     <div className="quiz-container">
       <div className="quiz-header">
         <h2>Quiz Board</h2>
-        <p>Test your knowledge and have fun!</p>
+        <p>Complete this Quiz and Earn 10$ Dollers!</p>
       </div>
       
       <div className="quiz-progress">

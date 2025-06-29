@@ -99,9 +99,9 @@
 
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './Scorecard.css';
+import './ScoreCard.css';
 
-const Scorecard = () => {
+const ScoreCard = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const quizData = location.state?.quizData;
@@ -193,4 +193,4 @@ const Scorecard = () => {
   );
 };
 
-export default Scorecard;
+export default ScoreCard;
