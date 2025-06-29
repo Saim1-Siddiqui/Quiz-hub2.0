@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import './Scorecard.css';
+import './ScoreCard.css';
 
 const Scorecard = () => {
   const location = useLocation();
