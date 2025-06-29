@@ -28,8 +28,8 @@ const Navebar = () => {
 
       <div className="nav-links">
         <NavLink to="/" className="nav-link">Home</NavLink>
-        <NavLink to="/create" className="nav-link">Create</NavLink>
-        <NavLink to="/explore" className="nav-link">Explore</NavLink>
+        <NavLink to="/createquiz" className="nav-link">Create-Quiz</NavLink>
+        <NavLink to="/QuizIntro" className="nav-link">QuizIntro</NavLink>
       </div>
 
       <div className="profile-dropdown" ref={dropdownRef}>
