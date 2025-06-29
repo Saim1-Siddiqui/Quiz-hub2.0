@@ -187,6 +187,15 @@ const QuizForm = () => {
     const newAnswers = [...userAnswers];
     newAnswers[currentQuestionIndex] = option;
     setUserAnswers(newAnswers);
+    
+    // Auto-advance to next question after a short delay
+    setTimeout(() => {
+      if (currentQuestionIndex < quizQuestions.length - 1) {
+        setDirection('right');
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+        setSelectedOption(userAnswers[currentQuestionIndex + 1]);
+      }
+    }, 500); // 0.5 second delay before moving to next question
   };
 
   const goToNextQuestion = () => {
