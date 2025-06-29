@@ -153,7 +153,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './AttemptQuiz.css';
 
 
-const QuizForm = () => {
+const AttemptQuiz = () => {
   const quizQuestions = [
     {
       question: 'What is the capital of France?',
@@ -334,4 +334,4 @@ const QuizForm = () => {
   );
 };
 
-export default QuizForm;
+export default AttemptQuiz;
