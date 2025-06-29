@@ -5,7 +5,7 @@ import Navebar from './pages/Layouts/Navebar'
 import  Sidebar  from './pages/Layouts/Sidebar'
 import Dashboard from  './pages/Dashboard/Dashboard'
 import  QuizIntro from './pages/Quiz/QuizIntro'
-import  AttemptQuiz from './pages/Quiz/AttemptQuiz'
+import  QuizForm from './pages/Quiz/QuizForm'
 import  CreateQuiz from './pages/Quiz/CreateQuiz'
 import Lending from './pages/Auth/Lending'
 import Login from './pages/Auth/Login'
@@ -32,7 +32,7 @@ function App() {
   <Route path='/Forget' element={<Forget/>}/>
   <Route path='/dashboard' element={<Dashboard/>}/>
 <Route path="/QuizIntro/:category" element={<QuizIntro />} />
-  <Route path='/AttemptQuiz' element={<AttemptQuiz/>}/>
+  <Route path='/QuizForm' element={<QuizForm/>}/>
   <Route path='/CreateQuiz' element={<CreateQuiz/>}/>
   <Route path='/ScoreCard' element={<ScoreCard/>}/>
   <Route path='/Leadingboard' element={<Leadingboard/>}/>
