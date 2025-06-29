@@ -4,7 +4,7 @@ import {Routes,Route} from 'react-router-dom'
 import Navebar from './pages/Layouts/Navebar'
 import  Sidebar  from './pages/Layouts/Sidebar'
 import Dashboard from  './pages/Dashboard/Dashboard'
-import  QuizItro from './pages/Quiz/QuizIntro'
+import  QuizIntro from './pages/Quiz/QuizIntro'
 import  AttemptQuiz from './pages/Quiz/AttemptQuiz'
 import  CreateQuiz from './pages/Quiz/CreateQuiz'
 import Lending from './pages/Auth/Lending'
@@ -31,7 +31,7 @@ function App() {
   <Route path='/Signup' element={<Signup/>}/>
   <Route path='/Forget' element={<Forget/>}/>
   <Route path='/dashboard' element={<Dashboard/>}/>
-  <Route path='/QuizIntro' element={<QuizItro/>}/>
+<Route path="/QuizIntro/:category" element={<QuizIntro />} />
   <Route path='/AttemptQuiz' element={<AttemptQuiz/>}/>
   <Route path='/CreateQuiz' element={<CreateQuiz/>}/>
   <Route path='/ScoreCard' element={<ScoreCard/>}/>
