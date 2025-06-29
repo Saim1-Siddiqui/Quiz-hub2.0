@@ -150,7 +150,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import './AttemptQuiz.css';
+import './QuizForm.css';
 
 const QuizForm = () => {
   const quizQuestions = [
