@@ -16,7 +16,7 @@ function Sidebar() {
       {/* <h1 className="logo">Side-bar</h1> */}
       <nav className="nav">
          <NavLink to="/Dashboard" className="Quiz-hub">
-         <FontAwesomeIcon icon={faHouse} className="icon" />Dashboard
+         <FontAwesomeIcon icon={faHouse} className="icon" />Dashboardd
         </NavLink>
         <NavLink to ="/Science" className="Quiz-hub"> 
         <GiAtom className="icon"/> Science
