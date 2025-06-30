@@ -95,14 +95,20 @@
 
 
 
+/*
 
+<<<<<<< HEAD
 
 .Zainbody {
   width: 100%;
+=======
+/* body {
+  margin: 0;
+>>>>>>> 1a910e9ad20685405f4ff1fb7a02de2141b4f012
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #181820;
   color: white;
-}
+} */
 
 
 .quiz-container {

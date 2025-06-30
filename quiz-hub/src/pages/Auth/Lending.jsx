@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Lending.css'
 import { MdQuiz } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
@@ -6,12 +6,11 @@ import { FaUserFriends } from "react-icons/fa";
 import { GiProgression } from "react-icons/gi";
 import {BrowserRouter,Route,Router,Routes} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 
 
 function Lending() {
   
-    
   return (
     
     <div className="container">
@@ -35,7 +34,7 @@ function Lending() {
                        Share Quizes with friends and compete for higher score 
                    </p>
             </div>
-            <div className='box-3'> <GiProgression className='icon-4'/> 
+            < div className='box-3'> <GiProgression className='icon-4'/> 
               <h1>
                   Track your progress
               </h1>
@@ -43,15 +42,16 @@ function Lending() {
                    Monitor your performance and see how you stack up against other
                </p>
                
-            </div>
+          </div>
         </div>
       
  
 
+ </div>
 
 
 
-  </div> 
+ 
   )
 }
 
