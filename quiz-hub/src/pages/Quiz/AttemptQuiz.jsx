@@ -334,7 +334,7 @@ const AttemptQuiz = () => {
   const isLastQuestion = currentQuestionIndex === quizQuestions.length - 1;
 
   return (
-    <div className="Zainbody">
+    <div className="Main-Container">
       <div className="quiz-container">
         <div className="quiz-header">
           <h2>Quiz Board</h2>

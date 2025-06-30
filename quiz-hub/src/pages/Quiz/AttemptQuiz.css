@@ -97,12 +97,10 @@
 
 
 
-
-
-.Zainbody {
+.Main-Container{
   margin: 0;
+  /* width: 100%; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
   background-color: #181820;
   color: white;
 }
