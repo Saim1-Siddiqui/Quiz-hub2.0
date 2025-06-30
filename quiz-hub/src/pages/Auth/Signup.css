@@ -71,8 +71,29 @@
    .login-email{
     padding-top: 15px;
    }
-   .labelpro{
+ .checktick{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 600px;
+    padding-top: 30px;
+    font-size: 20px;
+    padding-left: 40px;
+ }
+ .checkbox1{
+    height: 20px;
+    width: 30px;
+ }
+ .btn-signup{
+    width: 170px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #3e3e5e;
+    color: whitesmoke;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 600px;
+ }
    
-  padding-left: 300px;
-  padding-top: 20px;
-   }
+   

@@ -22,12 +22,14 @@ function SignUp() {
           </div>
           <div className='labelpro'>
           <label className='label'>
-             <input type='checkbox'>
+            <div className="checktick">
+             <input className='checkbox1' type='checkbox'>
                </input>
-               <p>
+               <p className='hello'>
                   i agree with all sugestions 
                </p>
-               <button type='submit'> signup</button>
+               </div>
+               <button className='btn-signup' type='submit'> signup</button>
               
           </label>
           </div>
