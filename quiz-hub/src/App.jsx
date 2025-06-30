@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {Routes,Route} from 'react-router-dom'
+import {Routes,Route, useLocation} from 'react-router-dom'
 import Navebar from './pages/Layouts/Navebar'
 import  Sidebar  from './pages/Layouts/Sidebar'
 import Dashboard from  './pages/Dashboard/Dashboard'
@@ -17,12 +17,15 @@ import Leadingboard from './pages/ExtraPages/Leaderboard'
 import ScoreCard from './pages/ExtraPages/ScoreCard'
 
 
+
 function App() {
+  const location = useLocation()
   return (
     < >
-  <Navebar/>
+   { location.pathname!="/login" && location.pathname!="/signup" &&  location.pathname!="/Forget" &&
+  <Navebar/>}
  <div className='app-container'>
- <Sidebar/>
+ { location.pathname!="/login" && location.pathname!="/signup" &&  location.pathname!="/Forget" && <Sidebar/>}
 <Routes> 
  {/* <Route path='/' element={<Navebar/>}/>
  <Route path='/SideBar' element={<Sidebar/>}/> */}
