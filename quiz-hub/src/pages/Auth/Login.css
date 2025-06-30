@@ -61,6 +61,8 @@
     background-color: #3e3e5e;
     color: whitesmoke;
     font-size: 20px;
+    outline: none;
+    border: none;
   }
   .signup-p {
     color: white;

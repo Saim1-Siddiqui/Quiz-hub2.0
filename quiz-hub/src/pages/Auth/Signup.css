@@ -94,6 +94,8 @@
     display: flex;
     justify-content: center;
     margin-left: 600px;
+    outline: none;
+    border: none;
  }
    
    
