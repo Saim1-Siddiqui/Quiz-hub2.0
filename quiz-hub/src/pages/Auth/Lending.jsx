@@ -6,14 +6,11 @@ import { FaUserFriends } from "react-icons/fa";
 import { GiProgression } from "react-icons/gi";
 import {BrowserRouter,Route,Router,Routes} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 
 
 function Lending() {
-   const [useremail,setuseremail] = useState('')
-   const [password,setpassword] = useState('')  
-   
-    
+  
   return (
     
     <div className="container">

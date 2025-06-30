@@ -39,7 +39,7 @@ function Login() {
       </div>
       </div>
       <p>
-        <Link to="/forgot-password" className='forget'>Forgot Password?</Link>
+        <Link to="/Forget" className='forget'>Forget Password?</Link>
       </p>
         <button className='btn-login'> Login</button>
         <p className='signup-p'>Don't have an account? <Link to="/signup">Sign Up</Link></p>
