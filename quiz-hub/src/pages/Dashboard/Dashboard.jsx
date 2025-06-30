@@ -6,19 +6,19 @@ import { NavLink } from 'react-router-dom';
 const quizzes = [
   {
     title: "Fun Quiz",
-    image: "../../../public/Images/"
+    image: "../../../public/Images/fun.jpg"
   },
   {
     title: "Science Quiz",
-    image: ""
+    image: "../../../public/Images/science.jpg"
   },
   {
     title: "Math Quiz",
-    image: ""
+    image: "../../../public/Images/math.jpg"
   },
   {
     title: "Computer Quiz",
-    image: ""
+    image: "../../../public/Images/computer.jpg"
   }
 ];
 
