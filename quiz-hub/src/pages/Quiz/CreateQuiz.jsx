@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './CreateQuiz.css';
 import { NavLink } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function CreateQuiz() {
   const [quizData, setQuizData] = useState({
@@ -57,12 +58,23 @@ function CreateQuiz() {
       ]
     }));
   };
+const handleSubmit = (e) => {
+  e.preventDefault();
+  const { title, description, category, difficulty, timeLimit, questions } = quizData;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const allQuestionsFilled = questions.every(
+    (q) => q.text && q.correctAnswer && q.options.every((opt) => opt.trim() !== '')
+  );
+
+  if (title && description && category && difficulty && timeLimit && allQuestionsFilled) {
     console.log('Quiz Data:', quizData);
-    // Here you would typically send the data to your backend
-  };
+    toast.success("Quiz Created Successfully");
+    // Send quizData to backend here
+  } else {
+    toast.warning("All the fields are required");
+  }
+};
+
 
   return (
     <div className='create-container'>
