@@ -29,7 +29,7 @@ const Navebar = () => {
       <div className="nav-links">
         <NavLink to="/" className="nav-link">Home</NavLink>
         <NavLink to="/createquiz" className="nav-link">Create-Quiz</NavLink>
-        <NavLink to="/QuizIntro:html" className="nav-link">QuizIntro</NavLink>
+        {/* <NavLink to="/QuizIntro:html" className="nav-link">QuizIntro</NavLink> */}
       </div>
 
       <div className="profile-dropdown" ref={dropdownRef}>

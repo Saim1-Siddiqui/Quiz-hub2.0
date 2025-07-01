@@ -18,7 +18,7 @@ function Sidebar() {
          <NavLink to="/Dashboard" className="Quiz-hub">
          <FontAwesomeIcon icon={faHouse} className="icon" />Dashboard
         </NavLink>
-        <NavLink to ="/Science" className="Quiz-hub"> 
+        {/* <NavLink to ="/Science" className="Quiz-hub"> 
         <GiAtom className="icon"/> Science
         </NavLink>
         <NavLink to="/Math" className="Quiz-hub">
@@ -26,7 +26,7 @@ function Sidebar() {
         </NavLink>
         <NavLink to="/Computer" className="Quiz-hub">
          <MdComputer className='icon' />Categories
-        </NavLink>
+        </NavLink> */}
        
       </nav>
     </aside>
