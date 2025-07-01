@@ -56,7 +56,8 @@ function QuizIntro() {
            </div>
            </div>
          <div className='startbutton'>
-   <NavLink to="/AttemptQuiz" className="start-link ">
+ <NavLink to={`/AttemptQuiz/${category}`} className="start-link">
+
       <FaArrowRight/>
     </NavLink>
 </div>
