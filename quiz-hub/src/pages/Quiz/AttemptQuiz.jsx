@@ -222,12 +222,22 @@
 
 
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './AttemptQuiz.css';
+import {useQuiz} from '../../store/Context-api'
+import { useParams } from 'react-router-dom';
 
 const AttemptQuiz = () => {
+  const {data}=useQuiz()
+  const { category } = useParams(); 
+   useEffect(()=>{
+     const selectedQuiz = data.find((quiz) => quiz.category === category);
+      console.log(selectedQuiz.questions)
+   },[data,category])
+
+
   const quizQuestions = [
     {
       question: 'What is the capital of France?',
