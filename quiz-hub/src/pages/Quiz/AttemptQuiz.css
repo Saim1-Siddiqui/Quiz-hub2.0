@@ -1,102 +1,3 @@
-/* .quiz-form-container {
-  background-color: #231C35;
-  min-height: 100vh;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow-y: scroll;
-}
-
-.quiz-form {
-  background-color: #2D2645;
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 800px;
-  width: 100%;
-  color: white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.quiz-form h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: white;
-}
-
-.question-container {
-  margin-bottom: 1.5rem;
-}
-
-.question-container label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #B8B5C0;
-}
-
-.question-container input {
-  width: 100%;
-  padding: 0.75rem;
-  background-color: #3A3255;
-  border: 1px solid #4A4266;
-  border-radius: 6px;
-  color: white;
-  font-size: 1rem;
-}
-
-.submit-btn {
-  background-color: #5D8BF4;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  display: block;
-  margin: 2rem auto 0;
-  transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-  background-color: #4A7AE8;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .Main-Container{
   margin: 0;
   width: 100%;
@@ -110,7 +11,7 @@
   width: 70%;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #2D2645;
+  background-color: #1f2937;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -144,7 +45,7 @@
 
 
 .question-card {
-  background-color: #3A3255;
+  background-color: #161d27;
   padding: 1.5rem;
   border-radius: 8px;
   border-left: 4px solid #5D8BF4;
@@ -165,7 +66,7 @@
 }
 
 .option-item {
-  background-color: #4A4266;
+  /* background-color: #4A4266; */
   border: 1.5px solid #5D8BF4;
   border-radius: 6px;
   padding: 1rem;
@@ -181,8 +82,8 @@
 }
 
 .option-item.selected {
-  background-color: #4CAF50;
-  border-color: #4CAF50;
+  /* background-color: #4CAF50;
+  border-color: #4CAF50; */
   transform: scale(1.02);
   box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
 }
