@@ -7,7 +7,7 @@ function SignUp() {
   const [password1, setpassword1] = useState('');
   const [agree, setAgree] = useState(false);
 
-  // "Hardcoded" correct values
+
   const correctEmail = 'tahafaiz@gmail.com';
   const correctUsername = 'tahafaiz';
   const correctPassword = '1234';
