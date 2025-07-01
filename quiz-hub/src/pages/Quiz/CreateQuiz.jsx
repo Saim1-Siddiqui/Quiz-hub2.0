@@ -79,11 +79,11 @@ const handleSubmit = (e) => {
   return (
     <div className='create-container'>
       <form className='create-form' onSubmit={handleSubmit}>
-        <h1 className='form-title'>Create Quiz</h1>
+        <h1 className='form-title newcolor'>Create Quiz</h1>
         
         {/* Quiz Metadata */}
         <div className="form-section">
-          <h3>Quiz Information</h3>
+          <h3 className='newcolor'>Quiz Information</h3>
           <input 
             type="text" 
             name="title"
@@ -135,7 +135,7 @@ const handleSubmit = (e) => {
         <div className="questions-container">
           {quizData.questions.map((question, qIndex) => (
             <div key={qIndex} className="question-section">
-              <h3>Question {qIndex + 1}</h3>
+              <h3 className='newcolor'>Question {qIndex + 1}</h3>
               <input
                 type="text"
                 placeholder='Question text'
@@ -172,10 +172,10 @@ const handleSubmit = (e) => {
         </div>
 
         <div className='btn-wrapper'>
-          <button type="button" className='create-btn add-btn' onClick={addQuestion}>
+          <button type="button newcolor" className='create-btn add-btn newcolor' onClick={addQuestion}>
             Add Question
           </button>
-          <button type="submit" className='create-btn submit-btn'>
+          <button type="submit" className='create-btn submit-btn newcolor'>
             Create Quiz
           </button>
         </div>
