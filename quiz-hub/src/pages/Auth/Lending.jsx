@@ -23,14 +23,14 @@ function Lending() {
             <div className='box-1'><FaPlus className='icon-2'/> <h1>
                 Create Your own Quizes 
               </h1>
-              <p>Easily design and customise Quizes with our user-friendly tools</p>
+              <p className='paragraph11'>Easily design and customise Quizes with our user-friendly tools</p>
               </div>
             <div className='box-2'>
             <FaUserFriends className='icon-3'/>
                <h1>
                    Connect with friends 
                </h1>
-                   <p>
+                   <p className='paragraph22'>
                        Share Quizes with friends and compete for higher score 
                    </p>
             </div>
@@ -38,7 +38,7 @@ function Lending() {
               <h1>
                   Track your progress
               </h1>
-               <p>
+               <p className='paragraph33'>
                    Monitor your performance and see how you stack up against other
                </p>
                
