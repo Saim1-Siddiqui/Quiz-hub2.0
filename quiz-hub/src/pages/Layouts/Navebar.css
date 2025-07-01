@@ -135,6 +135,6 @@
 }
 
 .dropdown-item:hover {
-  background-color: #394164;
   transform: translateX(4px);
 }
+
