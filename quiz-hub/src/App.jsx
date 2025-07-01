@@ -35,7 +35,7 @@ function App() {
   <Route path='/Forget' element={<Forget/>}/>
   <Route path='/dashboard' element={<Dashboard/>}/>
 <Route path="/QuizIntro/:category" element={<QuizIntro />} />
-  <Route path='/AttemptQuiz' element={<AttemptQuiz/>}/>
+  <Route path='/AttemptQuiz/:category' element={<AttemptQuiz/>}/>
   <Route path='/CreateQuiz' element={<CreateQuiz/>}/>
   <Route path='/ScoreCard' element={<ScoreCard/>}/>
   <Route path='/Leadingboard' element={<Leadingboard/>}/>
