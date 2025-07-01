@@ -121,21 +121,21 @@ const AttemptQuiz = () => {
             <div ref={nodeRef} className="question-card">
               <h3>{currentQuestion.text}</h3>
               <div className="options-list">
-                {currentQuestion.options.map((option, index) => (
-                  <div
-                    key={index}
-                    className={`option-item ${selectedOption === option ? 'selected' : ''}`}
-                    onClick={() => handleOptionSelect(option)}
-                  >
-                    <input
-                      type="radio"
-                      name="quiz-option"
-                      checked={selectedOption === option}
-                      readOnly
-                    />
-                    <span>{option}</span>
-                  </div>
-                ))}
+               {currentQuestion.options.map((option, index) => (
+  <div
+    key={index}
+    className={`option-item ${selectedOption === option ? 'selected' : ''}`}
+    onClick={() => handleOptionSelect(option)}
+  >
+    <input
+      type="radio"
+      name="quiz-option"
+      checked={selectedOption === option}
+      readOnly
+    />
+    <span>{option}</span>
+  </div>
+))}
               </div>
             </div>
           </CSSTransition>

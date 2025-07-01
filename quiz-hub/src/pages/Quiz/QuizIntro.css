@@ -1,7 +1,7 @@
 .Quiz-container{
     font-size: 0.7rem;
     color:#FFFFFF;
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: #17171c;
     display: flex;
@@ -9,6 +9,7 @@
     /* justify-content: center; */
     align-items: center;
     /* padding-inline: 1rem; */
+    overflow: hidden;
     
 }
 .hero-image{
