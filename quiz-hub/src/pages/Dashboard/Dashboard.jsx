@@ -43,7 +43,7 @@ function Dashboard() {
         <h2>Create Your Own Quiz</h2>
         <div className="create-box">
           <h3>Create a new quiz</h3>
-          <p>Add your own questions and challenge your best friends</p>
+          <p>Add your own questions and challenge your friends</p>
           <NavLink to="/createquiz" className="dash-link">Create-Quiz</NavLink>
         </div>
       </section>
