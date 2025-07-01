@@ -100,6 +100,37 @@ h1, h2 {
   background: linear-gradient(135deg, #2563eb, #4f46e5);
 }
 
+/* Add these styles to your existing Dashboard.css */
+
+.quiz-card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.start-quiz-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  width: 100%;
+}
+
+.start-quiz-button:hover {
+  background-color: #45a049;
+}
+
+.quiz-card {
+  display: block;
+  text-decoration: none;
+  /* Your existing quiz-card styles remain the same */
+}
+
 /* Responsive Fixes */
 @media (max-width: 768px) {
   .quiz-card {
