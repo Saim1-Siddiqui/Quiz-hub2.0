@@ -10,6 +10,7 @@
     align-items: center;
     /* padding-inline: 1rem; */
     overflow: hidden;
+    padding: 1rem;
     
 }
 .hero-image{
@@ -18,7 +19,7 @@ height: auto;
 
 }
 .Intro-content{
-    padding-inline: 2rem;
+    /* padding-inline: 2rem; */
 }
 .Intro-imge {
   width: 100%;
