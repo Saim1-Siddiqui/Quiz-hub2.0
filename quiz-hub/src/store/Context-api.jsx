@@ -1,6 +1,7 @@
 import { createContext,useContext } from "react";
+import { data } from '../assets/data';
+
  export const QuizContext= createContext()
- import {data} from '../assets/data'
   
  export const QuizProvider=({children})=>{
     const myname="Mohsan";
@@ -20,3 +21,19 @@ import { createContext,useContext } from "react";
         
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
