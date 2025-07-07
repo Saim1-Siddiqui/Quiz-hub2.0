@@ -106,6 +106,13 @@
   color: #5D8BF4;
 }
 
+.score-points {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-top: 0.5rem;
+}
+
 .detailed-results {
   margin-top: 2rem;
 }
@@ -144,26 +151,45 @@
   font-weight: bold;
 }
 
-.retake-btn {
-  width: 100%;
+.scorecard-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.retake-btn,
+.leaderboard-btn {
+  flex: 1;
   padding: 1rem;
-  background-color: #5D8BF4;
   color: white;
   border: none;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 1.5rem;
   transition: background-color 0.2s;
+  text-align: center;
+  min-width: 0; /* Ensures flex items can shrink properly */
+}
+
+.retake-btn {
+  background-color: #5D8BF4;
 }
 
 .retake-btn:hover {
   background-color: #4A7AE8;
 }
 
-/* Responsive Styles */
+.leaderboard-btn {
+  background-color: #49c0a6;
+}
+
+.leaderboard-btn:hover {
+  background-color: #3aa992;
+}
+
 @media (max-width: 768px) {
-  .quiz-container, .scorecard-card {
+  .scorecard-card {
     padding: 1.5rem;
   }
   
@@ -174,5 +200,10 @@
   .results-table {
     display: block;
     overflow-x: auto;
+  }
+  
+  .scorecard-actions {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 }

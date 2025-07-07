@@ -12,7 +12,7 @@ import Login from './pages/Auth/Login'
 import  Signup from './pages/Auth/Signup'
 import Forget from './pages/Auth/Forget'
 // import ScoreCode from './pages/ExtraPages/ScoreCarde'
-import Leadingboard from './pages/ExtraPages/Leaderboard'
+import Leaderboard from './pages/ExtraPages/Leaderboard'
 // import ScoreCarde from './pages/ExtraPages/ScoreCard'
 import ScoreCard from './pages/ExtraPages/ScoreCard'
 
@@ -38,7 +38,7 @@ function App() {
   <Route path='/AttemptQuiz/:category' element={<AttemptQuiz/>}/>
   <Route path='/CreateQuiz' element={<CreateQuiz/>}/>
   <Route path='/ScoreCard' element={<ScoreCard/>}/>
-  <Route path='/Leadingboard' element={<Leadingboard/>}/>
+  <Route path='/Leaderboard' element={<Leaderboard/>}/>
 
 </Routes>
  </div>

@@ -1,0 +1,233 @@
+/* Leaderboard.css */
+.leaderboard-container {
+  background-color: #181820;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  color: white;
+}
+
+.leaderboard-container h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #5D8BF4;
+}
+
+.subtitle {
+  text-align: center;
+  color: #B8B5C0;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #4A4266;
+  margin: 1.5rem 0;
+}
+
+/* Podium Styles */
+.podium-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.podium-place {
+  background-color: #1f2937;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  max-width: 200px;
+}
+
+.podium-place.place-1 {
+  height: 180px;
+  background: linear-gradient(to bottom, #ffd700, #c5a600);
+}
+
+.podium-place.place-2 {
+  height: 150px;
+  background: linear-gradient(to bottom, #c0c0c0, #999999);
+}
+
+.podium-place.place-3 {
+  height: 120px;
+  background: linear-gradient(to bottom, #cd7f32, #a66a2a);
+}
+
+.podium-rank {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.podium-info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.podium-info p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.you-badge {
+  display: inline-block;
+  background-color: #5D8BF4;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* Leaderboard Table */
+.leaderboard-table {
+  margin: 2rem 0;
+}
+
+.leaderboard-table h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.leaderboard-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1f2937;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.leaderboard-table th {
+  background-color: #3A3255;
+  color: #d4d3d8;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.leaderboard-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #4A4266;
+}
+
+.highlight-row {
+  background-color: rgba(93, 139, 244, 0.1);
+}
+
+.you-indicator {
+  color: #5D8BF4;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+/* User Stats */
+.user-stats {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.user-stats h2 {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.stats-card {
+  background-color: #1f2937;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.stat-item:last-child {
+  margin-bottom: 0;
+}
+
+.stat-label {
+  color: #B8B5C0;
+}
+
+.stat-value {
+  font-weight: bold;
+  color: #5D8BF4;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+.primary-btn {
+  background-color: #5D8BF4;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #4A7AE8;
+}
+
+.secondary-btn {
+  background-color: #3A3255;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: #4A4266;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .podium-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .podium-place {
+    width: 100%;
+    max-width: 300px;
+    height: auto !important;
+    padding: 1rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
