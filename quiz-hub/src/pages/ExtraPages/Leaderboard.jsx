@@ -19,15 +19,15 @@ const Leaderboard = () => {
   const [players, setPlayers] = useState(() => {
     const savedPlayers = JSON.parse(localStorage.getItem('leaderboardPlayers')) || [
       { id: 1, name: "Farhan Zulfi", score: 980 },
-      { id: 2, name: "Saim Siddiqui", score: 950 },
-      { id: 3, name: "Zain Ishfaq", score: 920 },
-      { id: 4, name: "Mohsan 001", score: 900 },
-      { id: 5, name: "Taha 012", score: 880 },
-      { id: 6, name: "Ali karachi", score: 860 },
-      { id: 7, name: "Rizwan khan", score: 840 },
-      { id: 8, name: "Subhan Lee", score: 820 },
-      { id: 9, name: "Anas Patwari", score: 800 },
-      { id: 10, name: "Liyaqat Perez", score: 780 },
+      { id: 2, name: "Saim Siddiqui", score: 855 },
+      { id: 3, name: "Zain Ishfaq", score: 710 },
+      { id: 4, name: "Mohsan 001", score: 570 },
+      { id: 5, name: "Taha 012", score: 425 },
+      { id: 6, name: "Ali karachi", score: 285 },
+      { id: 7, name: "Rizwan khan", score: 143 },
+      { id: 8, name: "Subhan Lee", score: 142 },
+      { id: 9, name: "Anas Patwari", score: 142 },
+      { id: 10, name: "Liyaqat Perez", score: 142 },
     ];
     return savedPlayers;
   });
