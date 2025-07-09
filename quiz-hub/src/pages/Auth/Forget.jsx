@@ -10,10 +10,10 @@ function Forget() {
         
              
         <label className='label-email'> Email  <  MdAttachEmail className='email-icon' /></label>
-        <input type="email" name="email" placeholder="Enter your email" />
+        <input type="email" name="email" placeholder="Enter your email" onChange={(e)=>setemail(e.target.value)} />
 
         <label className='label-password'>New Password</label>
-        <input type="password" name="new-password" placeholder="Enter new password" />
+        <input type="password" name="new-password" placeholder="Enter new password" onChange={(e)=>(e.target.value)} />
 
         <label className='label-confirm'>Confirm Password</label>
         <input type="password" name="confirm-password" placeholder="Confirm new password" />
